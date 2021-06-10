@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
                 Text('Children 1.3'),
                 Text('Children 1.4'),
               ],
-              parentColor: Colors.orange,
-              childrenColor: Colors.red,
+              parentCheckboxColor: Colors.orange,
+              childrenCheckboxColor: Colors.red,
             ),
             ParentChildCheckbox(
               parent: Text('Parent 2'),
@@ -31,14 +31,14 @@ class MyApp extends StatelessWidget {
                 Text('Children 2.3'),
                 Text('Children 2.4'),
               ],
-              parentColor: Colors.orange,
-              childrenColor: Colors.red,
+              // parentCheckboxColor: Colors.orange,
+              // childrenCheckboxColor: Colors.red,
             ),
             ElevatedButton(
               child: Text('Get Data'),
               onPressed: () {
                 print(ParentChildCheckbox.isParentSelected);
-                print(ParentChildCheckbox.selectedChildrenMap);
+                print(ParentChildCheckbox.selectedChildrens);
               },
             ),
           ],
